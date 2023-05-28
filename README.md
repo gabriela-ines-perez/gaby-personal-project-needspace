@@ -1,10 +1,8 @@
-# Boilerplate: Knex.js
+# Gaby Space- a way to track values and needs in a visual way
 
 ## Setup
 
-### What's included
-
-Phase 1 boilerplate project with:
+### Node Modules Used
 
  - Express
  - Knex
@@ -23,7 +21,11 @@ npm run knex seed:run
 npm run dev
 ```
 
-Be sure to check out the other npm scripts too.
+### How it works
 
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-knex)
+Update the world by moving needs from stagnant to running. Each need has a timer so come back to check on what needs a refresh! 
+
+### Features
+
+- Add a need 
+- Set timer for needs
