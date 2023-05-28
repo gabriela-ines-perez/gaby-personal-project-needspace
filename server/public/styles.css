@@ -1,0 +1,181 @@
+body{
+  background-color: whitesmoke;
+  font-family: 'Space Mono', monospace;
+}
+
+a{
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.minus{
+  font-size: 20px;
+  border-color: #744087;
+  
+}
+
+.running-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.expiry-stamp{
+  color: #744087;
+}
+
+nav{
+ text-align: right;
+ margin-right: 10px;
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+  
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.footer-logo{
+  height: 10px;
+  width: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#logo{
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+
+}
+
+.app{
+  display: flex;
+  flex-direction: row;
+}
+
+.world-portal{
+  width: 60%;
+  height: 80vh;
+  border-radius: 20px;
+  /* border-style:solid ;
+  border-color:#B88AC8;
+  border-width: 1px; */
+  position:relative;
+  margin: 10px;
+  background-color: #b88ac823;
+}
+
+form{
+  width: 60%;
+  height: 40VH;
+  border-radius: 20px;
+  background-color: #b88ac823;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  flex-wrap: wrap;
+ 
+}
+
+input{
+  border-radius: 20px;
+  border-color:#b88ac851;
+  padding:5px;
+}
+
+.gabytar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.viewer{
+  background-color:antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 20%;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.viewer-item{
+  font-size: 13px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.viewer-item:hover{
+  background-color: aquamarine;
+}
+
+.purple-button{
+  font-family:'Space Mono', monospace;
+  background-color: #744087;
+  color: white;
+  border-radius: 20px;
+  border-width: 0px;
+  padding: 5px 7px 5px 7px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.purple-button:hover{
+
+  background-color:aquamarine;
+  color:#744087
+ 
+}
+.add-need-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.needs-image{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* animations */
+
+@keyframes pulse-dot {
+  from {background-color:#744087}
+  to {background-color:antiquewhite;}
+}
+
+/* The element to apply the animation to */
+.dot {
+  margin-top: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color:#744087;
+  animation-name: pulse-dot;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}

@@ -1,11 +1,11 @@
 exports.up = (knex) => {
-  return knex.schema.createTable('users', (table) => {
+  return knex.schema.createTable('needs', (table) => {
     table.increments('id').primary()
-    table.string('name')
-    table.string('email')
+    table.string('need')
+    table.string('expiry')
   })
 }
 
 exports.down = (knex) => {
-  return knex.schema.dropTable('users')
+  return knex.schema.dropTable('needs')
 }

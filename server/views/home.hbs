@@ -1,0 +1,48 @@
+
+ <section class="app">
+
+  <section class="running-needs, viewer">
+    <div class="dot">
+      
+    </div>
+    <h2>running</h2>
+    {{#each needs}}
+    <div class="viewer-item">
+      {{#if running}}
+      <div class="running-item">
+        <p class="expiry-stamp">{{expiry}}ms |</p>
+        <p>{{need}}</p>
+      </div>
+      <a href='/to-stagnant/{{id}}' class="minus">-</a>
+      {{/if}}
+    </div>
+    {{/each}}
+   
+  </section>
+
+{{>world-portal}}
+
+  <section class="stagnant-needs, viewer">
+    <h2>stagnant</h2>
+      {{#each needs}}
+    <div class="viewer-item">
+        {{#unless running}}
+        <p>{{need}}</p>
+        <a href='./to-running/{{id}}/{{expiry}}'>+</a>
+      {{/unless}}
+    </div>
+      {{/each}}
+    <a href="./add-need">
+     <button type=button class="purple-button">Create Need +  </button>
+    </a>
+  </section>
+
+
+ </section>
+
+{{!-- <section class="affirmation-block">
+
+
+
+</section> --}} 
+
